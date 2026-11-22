@@ -106,6 +106,19 @@ See [`docs/Design_Report.pdf`](docs/Design_Report.pdf) for the full design write
 
 Ban Kai Wei Benjamin · Chia Wei Xuan Rachael · Fam Qian Wei Jonathan · Zong Han Law · Muhammad Raziq
 
+### My contributions (Zong Han Law)
+
+**Client UI (Dear ImGui + DirectX 11)**
+- Designed and built the graphical client that replaced the original console workflow ([`Client/ClientUI.cpp`](Client/ClientUI.cpp), [`Client/ClientUI.h`](Client/ClientUI.h)).
+- Login screen for the server address, port and username.
+- Live market table that colours bid and ask prices and refreshes when the server broadcasts an update.
+- Bid/ask price trend graph for each stock, with hover readouts.
+- Trading panel with collapsible sections for the portfolio, buy, sell and trade history.
+- Top bar with the username and cash balance, a disconnect button, and a colour-coded activity log for trades, errors and notifications.
+
+**Test tooling**
+- Wrote [`tools/mock_trades.py`](tools/mock_trades.py), a Python load-testing script that speaks the server's binary protocol. It connects five bot traders on separate threads, each placing random buy and sell orders. This exercised the server under concurrent load and generated realistic price movement for the graphs.
+
 ## AI declaration
 
 This project was built with the assistance of AI, specifically [Claude Code](https://claude.com/claude-code) by Anthropic. AI tools helped with writing code, debugging and documentation. The team reviewed, tested and integrated all AI-assisted output and is responsible for the final work.
