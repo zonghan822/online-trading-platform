@@ -106,7 +106,7 @@ See [`docs/Design_Report.pdf`](docs/Design_Report.pdf) for the full design write
 
 Ban Kai Wei Benjamin · Chia Wei Xuan Rachael · Fam Qian Wei Jonathan · Zong Han Law · Muhammad Raziq
 
-### My contributions (Zong Han Law)
+## My contributions (Zong Han Law)
 
 **Client UI (Dear ImGui + DirectX 11)**
 - Designed and built the graphical client that replaced the original console workflow ([`Client/ClientUI.cpp`](Client/ClientUI.cpp), [`Client/ClientUI.h`](Client/ClientUI.h)).
